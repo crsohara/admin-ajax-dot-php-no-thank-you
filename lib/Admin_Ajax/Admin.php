@@ -119,7 +119,7 @@ class Admin
         //ddbug($form_data);
         
         add_action( 'shutdown', function () {
-            No_Thank_You::settings_load();
+            No_Thank_You::load_settings();
             flush_rewrite_rules( false );
         } );
 
